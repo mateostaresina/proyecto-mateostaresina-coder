@@ -1,0 +1,129 @@
+html{
+background-color: whitesmoke;
+}
+@media screen (min-width:1200px){
+
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    font-family:'Roboto', sans-serif;
+}
+header div{
+    display: flex;
+    align-items: flex-start;
+
+}
+h1{
+    font-size: 50px;
+}
+header nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+padding: 15px;
+}
+header nav ul li{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+h2 h3{
+    font-size: 40px;
+}
+
+footer{
+    font-size: 20px;
+    display: flex;
+   justify-content: space-between;
+    background-color: rgba(17, 17, 95, 0.986);
+    color:whitesmoke;
+    padding: 20px;
+}
+.imagen-portadada{
+    width: 100%;
+}
+form{
+    size: 40%;
+}
+table{
+    width: 350px;
+    height: 350px;
+border: blue;
+}
+
+p{
+ margin: 2px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+	grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
+    padding: 5%;
+}
+.grid-nosotros {
+    color: whitesmoke;
+    border: 4px solid black;
+    background: darkslategray;
+    text-align: center;
+    ;
+}
+.grid-menu {
+    color: whitesmoke;
+    border: 4px solid black;
+    background:darkslategray;
+    text-align: center;
+}
+.grid-servicios {
+    color: white;
+    border: 4px solid black;
+    background: darkslategray;
+    text-align: center;
+}
+.grid-reservas {
+    color: whitesmoke;
+    border: 4px solid black;
+    background: darkslategray;
+    text-align: center;
+}
+
+.grid-layout-nosotros{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    font-size: large;
+    color:whitesmoke;
+    background: darkslategray;
+
+}
+
+.main-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content:space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-layout-contacto {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.section-contacto {
+    border: 4px solid black;
+}
+
+.portada {
+    justify-content: center;
+}

@@ -1,4 +1,4 @@
-html {
+    html {
     background-color: whitesmoke;
 }
 
@@ -50,8 +50,8 @@ footer {
     padding: 20px;
 }
 
-.imagen-portadada {
-    width: 80%;
+.imagen-portada {
+ margin: 0 auto;
 }
 
 form {
@@ -72,8 +72,8 @@ p {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
-    justify-content: space-around;
     justify-content: space-between;
+    align-items: center;
     margin: 10px;
 
 }
@@ -162,4 +162,16 @@ padding: 20px;
 
 .portada {
     justify-content: center;
+}
+@media screen and (min-width=1200px){
+.body{
+        background-color:yellow;
+        
+}
+}
+
+@media screen and (max-width: 576px){
+body{
+        background-color: crimson;
+    }
 }

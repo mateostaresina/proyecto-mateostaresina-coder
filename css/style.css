@@ -126,7 +126,25 @@ padding: 20px;
     font-size: large;
     color: whitesmoke;
     background: darkslategray;
-
+    margin: 5px;
+}
+.div-nosotros {
+    background-color: white;
+    padding: 2%;
+    margin: 4px;
+    justify-content: space-around;
+}
+.div-nosotros2 {
+    background-color: white;
+    padding: 2%;
+    margin: 4px;
+    justify-content: space-around;
+}
+.image-burguer {
+ padding: 8px;
+ margin: 8px;
+ align-items: center;
+ justify-items: center;
 }
 
 .main-menu {

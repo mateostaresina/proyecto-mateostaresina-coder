@@ -1,9 +1,6 @@
 html{
 background-color: whitesmoke;
 }
-@media screen (min-width:1200px){
-
-}
 
 * {
     margin: 0;
@@ -66,8 +63,11 @@ p{
     display: grid;
     grid-template-columns: auto auto auto auto; 
 	grid-template-rows: auto auto auto auto;
+    justify-content: space-around;
     justify-content: space-between;
     padding: 5%;
+    margin: 10px;
+
 }
 .grid-nosotros {
     color: whitesmoke;
@@ -112,12 +112,6 @@ p{
     justify-content:space-around;
     padding: 10px;
     margin: 10px;
-}
-
-.grid-layout-contacto {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
 }
 
 .section-contacto {

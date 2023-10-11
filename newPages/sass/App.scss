@@ -1,0 +1,107 @@
+@import './index.scss';
+
+.imagen-portada {
+    margin: 0 auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: $marginSize;
+
+}
+
+.card-nosotros {
+    padding: $paddingCard;
+}
+
+.card-menu {
+    padding: $paddingCard;
+}
+
+.card-servicios {
+    padding: $paddingCard;
+}
+
+.card-contacto {
+    padding: $paddingCard;
+}
+
+.grid-nosotros {
+    @extend %border;
+    color: $white;
+    background: $darkGray;
+    text-align: center;
+}
+
+.grid-menu {
+    @extend %border;
+    color: $white;
+    background: $darkGray;
+    text-align: center;
+}
+
+.grid-servicios {
+    @extend %border;
+    color: $white;
+    background: $darkGray;
+    text-align: center;
+}
+
+.grid-reservas {
+    @extend %border;
+    color: $white;
+    background: $darkGray;
+    text-align: center;
+}
+
+.grid-layout-nosotros {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    font-size: large;
+    color: $white;
+    background: $darkGray;
+    margin: 5px;
+}
+
+.div-nosotros {
+    background-color: $white;
+    padding: 2%;
+    margin: 4px;
+    justify-content: space-around;
+}
+
+.div-nosotros2 {
+    background-color: $white;
+    padding: 2%;
+    margin: 4px;
+    justify-content: space-around;
+}
+
+.image-burguer {
+    padding: 8px;
+    margin: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    padding: $paddingCard - 10;
+    margin: $marginSize;
+}
+
+.section-contacto {
+    @extend %border;
+}
+
+.portada {
+    justify-content: center;
+}

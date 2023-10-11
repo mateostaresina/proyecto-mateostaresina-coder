@@ -1,0 +1,131 @@
+@import 'reset';
+
+
+//------- VARIABLES ---------
+$black: red;
+$white: #fafafa;
+$footerColor: blue;
+$darkGray: darkslategray;
+$paddingCard: 20px;
+
+
+//------- MEDIAQS ---------
+$smallPhones: 520px;
+$tablet : 720px;
+$desktop : 1024px;
+
+
+//------- MIXINS-MEDIAQS ---------
+@mixin phone {
+    @media (max-width: #{$tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+
+//------- MIXINS ---------
+@mixin flexbox($jc: center, $ai: center, $fd: column) {
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+
+}
+
+//------- FUENTES ---------
+$bodyFont: 'Roboto', sans-serif;
+
+
+//------- TAMAÑOS ---------
+$titleFontSize: 50px;
+$footerFontSize: 20px;
+$marginSize: 10px;
+
+
+//------- TAMAÑOS PHONE ---------
+$sizeH1phone: 3rem;
+$sizeH2phone: 2rem;
+$sizePphone: 2rem;
+
+//------- TAMAÑOS TABLET ---------
+$sizeH1tablet: 3rem;
+$sizeH2tablet: 2rem;
+$sizePtablet: 2rem;
+
+//----EXTENDS---------
+%bordes {
+    border-style: solid;
+    border-width: 4px;
+    border-color: $black;
+  }
+
+//------ ESTILOS GLOBABLES ---------
+
+body {
+    font-family: $bodyFont;
+}
+
+h1 {
+    font-size: $titleFontSize;
+    color: $black;
+}
+
+h2 {
+    font-size: $titleFontSize;
+    color: $darkGray;
+}
+
+h3 {
+    font-size: $titleFontSize;
+    color: $darkGray;
+}
+
+p {
+    margin: 2px;
+}
+
+footer {
+    font-size: $footerFontSize;
+    display: flex;
+    justify-content: space-between;
+    background-color: $footerColor;
+    color: $white;
+    padding: $paddingCard;
+}
+
+form {
+    @include flexbox();
+    size: 40%;
+}
+
+table {
+    width: 350px;
+    height: 350px;
+    border: $footerColor;
+}
+
+header div {
+    display: flex;
+    @include flexbox(flex-start,center,column);
+}
+
+header nav ul {
+    //---list-style-type: none;
+    // text-decoration: none;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+header nav ul li {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: $footerFontSize;
+}
